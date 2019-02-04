@@ -1,0 +1,18 @@
+/* CSS VARIABLES */
+:root {
+	--header-color: gray;
+	--body-color: blue;
+	--footer-color: orange;
+}
+
+header {
+	background: var(--header-color);
+}
+
+body {
+	background: var(--body-color);
+}
+
+footer {
+	background: var(--footer-color);
+}
