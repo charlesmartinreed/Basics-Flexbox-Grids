@@ -1,0 +1,16 @@
+#box-container {
+	height: 500px;
+	display: flex;
+}
+
+#box1 {
+	background-color: dodgerBlue;
+	width: 50%;
+	height: 50%;
+}
+
+#box2 {
+	background-color: orangered;
+	width: 50%;
+	height: 50%;
+}
