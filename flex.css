@@ -1,16 +1,25 @@
 #box-container {
 	height: 500px;
-	display: flex;
+	display: flex; /* MAKES THIS A FLEX CONTAINER */
+	flex-direction: row-reverse; /* flex direction is row by default */
+	justify-content: center;
 }
 
 #box1 {
 	background-color: dodgerBlue;
-	width: 50%;
+	width: 25%;
 	height: 50%;
+}
+
+#box1 > p,
+#box2 > p {
+	font-size: 50px;
+	color: white;
+	/* text-align: center; */
 }
 
 #box2 {
 	background-color: orangered;
-	width: 50%;
+	width: 25%;
 	height: 50%;
 }
