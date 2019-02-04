@@ -1,14 +1,16 @@
 #box-container {
 	height: 500px;
 	display: flex; /* MAKES THIS A FLEX CONTAINER */
-	flex-direction: row-reverse; /* flex direction is row by default */
-	justify-content: center;
+	flex-direction: row; /* flex direction is row by default */
+	/* justify-content: center;
+	align-items: center; */
 }
 
 #box1 {
 	background-color: dodgerBlue;
-	width: 25%;
-	height: 50%;
+	width: 100%;
+	height: 200px;
+	flex-shrink: 1;
 }
 
 #box1 > p,
@@ -20,6 +22,7 @@
 
 #box2 {
 	background-color: orangered;
-	width: 25%;
-	height: 50%;
+	width: 100%;
+	height: 200px;
+	flex-shrink: 2; /* twice as small as box1 */
 }
