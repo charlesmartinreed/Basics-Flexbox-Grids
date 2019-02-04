@@ -1,18 +1,21 @@
 /* CSS VARIABLES */
 :root {
+	/* VARIABLES HAVE TO BE SCOPED TO THE THE ELEMENT IN WHICH YOU ARE ATTEMPTING TO USE THEM. PLACING THESE VARIABLES HERE MAKES THEM GLOBAL. */
 	--header-color: gray;
 	--body-color: blue;
 	--footer-color: orange;
 }
 
 header {
-	background: var(--header-color);
+	background: var(--header-color, gray);
 }
 
 body {
-	background: var(--body-color);
+	/* LOCAL SCOPE VARS OVERRIDE GLOBAL ONES */
+	--body-color: purple;
+	background: var(--body-color, blue);
 }
 
 footer {
-	background: var(--footer-color);
+	background: var(--footer-color, orange);
 }
