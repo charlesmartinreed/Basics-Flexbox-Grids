@@ -1,14 +1,44 @@
-.container {
-	font-size: 40px;
-	width: 100%;
-	background: LightGray;
-
-	display: grid;
-	
-}
-
 .d1 {background: LightSkyBlue;}
 .d2 {background: LightSalmon;}
 .d3 {background: PaleTurquoise;}
 .d4 {background: LightPink;}
-.d5 {background: PaleGreen;}
+.d5 {background: PaleGreen;
+	grid-column: 2 / 4;
+	grid-row: 2 / 4;
+}
+
+
+.container {
+	font-size: 40px;
+	min-height: 300px;
+	width: 100%;
+	background: LightGray;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	/* measurement units include %, pixels, ems and fr */
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	/* auto means only as much space as needed by contained element */
+
+	/* grid-template-columns: auto 50px 10% 2fr 1fr; */
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	/* grid-template-columns: 1fr 100px 2fr;
+	grid-template-rows: 50px 50px; */
+
+	/* creating gaps - first number is row, second is column*/
+	/* grid-column-gap: 20px;
+	grid-row-gap: 5px; */
+	/* grid-gap: 5px 20px; */
+
+	/* Grid layout for a 3x3
+		 1 2 3 4
+		 2
+		 3
+		 4
+
+		 Taking up two columns : 1 3
+		 grid-column
+	*/
+
+}
